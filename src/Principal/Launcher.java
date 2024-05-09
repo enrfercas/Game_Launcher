@@ -9,19 +9,40 @@ package Principal;
  *
  * @author casas
  */
-public class Pantalla extends javax.swing.JFrame {
+public class Launcher extends javax.swing.JFrame {
     
-    
+    int indexGrado;
+    int indexGame;
 
     /**
      * Creates new form Pantalla
      */
-    public Pantalla() {
+    public Launcher() {
         initComponents();
         
-         
-    }
+        CrearNuevoHomePorIndice(0);
 
+    }
+    
+     public void CrearNuevoHomePorIndice(int nGrado)
+    {
+        Home home = new Home(this,nGrado);
+        ContentContainer.removeAll();
+        ContentContainer.add(home);
+        ContentContainer.repaint();
+// lo limpian
+                //añaden la vista
+    }
+    
+    
+    public void CrearNuevoGamePorIndice(int nGrado, int nGame)
+    {
+        Game game = new Game(this,nGrado,nGame);
+          ContentContainer.removeAll();
+        ContentContainer.add(game);
+        ContentContainer.repaint();
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -33,12 +54,6 @@ public class Pantalla extends javax.swing.JFrame {
 
         jPanelContainer = new javax.swing.JPanel();
         ContentContainer = new javax.swing.JPanel();
-        Helicop = new javax.swing.JLabel();
-        Rcp = new javax.swing.JLabel();
-        Fire = new javax.swing.JLabel();
-        Robot = new javax.swing.JLabel();
-        Grua = new javax.swing.JLabel();
-        Bomberos = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         Escudo1 = new javax.swing.JLabel();
         Escudo2 = new javax.swing.JLabel();
@@ -60,38 +75,21 @@ public class Pantalla extends javax.swing.JFrame {
 
         jPanelContainer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        ContentContainer.setMaximumSize(new java.awt.Dimension(1440, 880));
+        ContentContainer.setMinimumSize(new java.awt.Dimension(1440, 880));
         ContentContainer.setName(""); // NOI18N
         ContentContainer.setOpaque(false);
-        ContentContainer.setLayout(new java.awt.GridLayout(2, 3));
 
-        Helicop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton0.png"))); // NOI18N
-        Helicop.setName(""); // NOI18N
-        Helicop.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HelicopMouseClicked(evt);
-            }
-        });
-        ContentContainer.add(Helicop);
-
-        Rcp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton1.png"))); // NOI18N
-        Rcp.setName(""); // NOI18N
-        ContentContainer.add(Rcp);
-
-        Fire.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton2.png"))); // NOI18N
-        Fire.setName(""); // NOI18N
-        ContentContainer.add(Fire);
-
-        Robot.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton3.png"))); // NOI18N
-        Robot.setName(""); // NOI18N
-        ContentContainer.add(Robot);
-
-        Grua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton4.png"))); // NOI18N
-        Grua.setName(""); // NOI18N
-        ContentContainer.add(Grua);
-
-        Bomberos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton5.png"))); // NOI18N
-        Bomberos.setName(""); // NOI18N
-        ContentContainer.add(Bomberos);
+        javax.swing.GroupLayout ContentContainerLayout = new javax.swing.GroupLayout(ContentContainer);
+        ContentContainer.setLayout(ContentContainerLayout);
+        ContentContainerLayout.setHorizontalGroup(
+            ContentContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1440, Short.MAX_VALUE)
+        );
+        ContentContainerLayout.setVerticalGroup(
+            ContentContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 880, Short.MAX_VALUE)
+        );
 
         jPanelContainer.add(ContentContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 1440, 880));
 
@@ -285,10 +283,6 @@ public class Pantalla extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Escudo13MouseClicked
 
-    private void HelicopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HelicopMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HelicopMouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -306,26 +300,26 @@ public class Pantalla extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Pantalla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Launcher.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Pantalla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Launcher.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Pantalla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Launcher.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Pantalla.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Launcher.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Pantalla().setVisible(true);
+                new Launcher().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Bomberos;
     private javax.swing.JPanel ContentContainer;
     private javax.swing.JLabel Escudo0;
     private javax.swing.JLabel Escudo1;
@@ -341,12 +335,7 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel Escudo7;
     private javax.swing.JLabel Escudo8;
     private javax.swing.JLabel Escudo9;
-    private javax.swing.JLabel Fire;
     private javax.swing.JLabel Fondo;
-    private javax.swing.JLabel Grua;
-    private javax.swing.JLabel Helicop;
-    private javax.swing.JLabel Rcp;
-    private javax.swing.JLabel Robot;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelContainer;
     // End of variables declaration//GEN-END:variables
