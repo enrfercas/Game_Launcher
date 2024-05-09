@@ -10,12 +10,16 @@ package Principal;
  * @author casas
  */
 public class Pantalla extends javax.swing.JFrame {
+    
+    
 
     /**
      * Creates new form Pantalla
      */
     public Pantalla() {
         initComponents();
+        
+         
     }
 
     /**
@@ -62,6 +66,11 @@ public class Pantalla extends javax.swing.JFrame {
 
         Helicop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton0.png"))); // NOI18N
         Helicop.setName(""); // NOI18N
+        Helicop.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HelicopMouseClicked(evt);
+            }
+        });
         ContentContainer.add(Helicop);
 
         Rcp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton1.png"))); // NOI18N
@@ -275,6 +284,10 @@ public class Pantalla extends javax.swing.JFrame {
     private void Escudo13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_Escudo13MouseClicked
+
+    private void HelicopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HelicopMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HelicopMouseClicked
 
     /**
      * @param args the command line arguments
