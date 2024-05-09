@@ -28,6 +28,13 @@ public class Pantalla extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanelContainer = new javax.swing.JPanel();
+        ContentContainer = new javax.swing.JPanel();
+        Helicop = new javax.swing.JLabel();
+        Rcp = new javax.swing.JLabel();
+        Fire = new javax.swing.JLabel();
+        Robot = new javax.swing.JLabel();
+        Grua = new javax.swing.JLabel();
+        Bomberos = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         Escudo1 = new javax.swing.JLabel();
         Escudo2 = new javax.swing.JLabel();
@@ -43,11 +50,41 @@ public class Pantalla extends javax.swing.JFrame {
         Escudo11 = new javax.swing.JLabel();
         Escudo12 = new javax.swing.JLabel();
         Escudo13 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanelContainer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ContentContainer.setName(""); // NOI18N
+        ContentContainer.setOpaque(false);
+        ContentContainer.setLayout(new java.awt.GridLayout(2, 3));
+
+        Helicop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton0.png"))); // NOI18N
+        Helicop.setName(""); // NOI18N
+        ContentContainer.add(Helicop);
+
+        Rcp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton1.png"))); // NOI18N
+        Rcp.setName(""); // NOI18N
+        ContentContainer.add(Rcp);
+
+        Fire.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton2.png"))); // NOI18N
+        Fire.setName(""); // NOI18N
+        ContentContainer.add(Fire);
+
+        Robot.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton3.png"))); // NOI18N
+        Robot.setName(""); // NOI18N
+        ContentContainer.add(Robot);
+
+        Grua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton4.png"))); // NOI18N
+        Grua.setName(""); // NOI18N
+        ContentContainer.add(Grua);
+
+        Bomberos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton5.png"))); // NOI18N
+        Bomberos.setName(""); // NOI18N
+        ContentContainer.add(Bomberos);
+
+        jPanelContainer.add(ContentContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 200, 1440, 880));
 
         jPanel1.setOpaque(false);
 
@@ -67,7 +104,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo2);
 
-        Escudo0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton2.png"))); // NOI18N
         Escudo0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo0MouseClicked(evt);
@@ -75,7 +112,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo0);
 
-        Escudo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton3.png"))); // NOI18N
         Escudo3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo3MouseClicked(evt);
@@ -83,7 +120,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo3);
 
-        Escudo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton4.png"))); // NOI18N
         Escudo4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo4MouseClicked(evt);
@@ -91,7 +128,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo4);
 
-        Escudo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton5.png"))); // NOI18N
         Escudo5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo5MouseClicked(evt);
@@ -99,7 +136,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo5);
 
-        Escudo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton6.png"))); // NOI18N
         Escudo6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo6MouseClicked(evt);
@@ -107,7 +144,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo6);
 
-        Escudo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton7.png"))); // NOI18N
         Escudo7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo7MouseClicked(evt);
@@ -115,7 +152,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo7);
 
-        Escudo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton8.png"))); // NOI18N
         Escudo8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo8MouseClicked(evt);
@@ -123,7 +160,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo8);
 
-        Escudo9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton9.png"))); // NOI18N
         Escudo9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo9MouseClicked(evt);
@@ -131,7 +168,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo9);
 
-        Escudo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton10.png"))); // NOI18N
         Escudo10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo10MouseClicked(evt);
@@ -139,7 +176,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo10);
 
-        Escudo11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton11.png"))); // NOI18N
         Escudo11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo11MouseClicked(evt);
@@ -147,7 +184,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo11);
 
-        Escudo12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton12.png"))); // NOI18N
         Escudo12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo12MouseClicked(evt);
@@ -155,7 +192,7 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo12);
 
-        Escudo13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton13.png"))); // NOI18N
         Escudo13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo13MouseClicked(evt);
@@ -165,8 +202,8 @@ public class Pantalla extends javax.swing.JFrame {
 
         jPanelContainer.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 1550, 110));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/FondoBase.png"))); // NOI18N
-        jPanelContainer.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/FondoBase.png"))); // NOI18N
+        jPanelContainer.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -275,6 +312,8 @@ public class Pantalla extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Bomberos;
+    private javax.swing.JPanel ContentContainer;
     private javax.swing.JLabel Escudo0;
     private javax.swing.JLabel Escudo1;
     private javax.swing.JLabel Escudo10;
@@ -289,7 +328,12 @@ public class Pantalla extends javax.swing.JFrame {
     private javax.swing.JLabel Escudo7;
     private javax.swing.JLabel Escudo8;
     private javax.swing.JLabel Escudo9;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel Fire;
+    private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel Grua;
+    private javax.swing.JLabel Helicop;
+    private javax.swing.JLabel Rcp;
+    private javax.swing.JLabel Robot;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelContainer;
     // End of variables declaration//GEN-END:variables

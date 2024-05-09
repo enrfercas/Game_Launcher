@@ -39,6 +39,72 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
+        <Container class="javax.swing.JPanel" name="ContentContainer">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="480" y="200" width="1440" height="880"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="3"/>
+            <Property name="rows" type="int" value="2"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="Helicop">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/InterfazHome/Miniaturas simuladores/HomeButton0.png"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Rcp">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/InterfazHome/Miniaturas simuladores/HomeButton1.png"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Fire">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/InterfazHome/Miniaturas simuladores/HomeButton2.png"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Robot">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/InterfazHome/Miniaturas simuladores/HomeButton3.png"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Grua">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/InterfazHome/Miniaturas simuladores/HomeButton4.png"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="Bomberos">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/InterfazHome/Miniaturas simuladores/HomeButton5.png"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="" noResource="true"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
         <Container class="javax.swing.JPanel" name="jPanel1">
           <Properties>
             <Property name="opaque" type="boolean" value="false"/>
@@ -74,7 +140,7 @@
             <Component class="javax.swing.JLabel" name="Escudo0">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton2.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -84,7 +150,7 @@
             <Component class="javax.swing.JLabel" name="Escudo3">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton3.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -94,7 +160,7 @@
             <Component class="javax.swing.JLabel" name="Escudo4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton4.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -104,7 +170,7 @@
             <Component class="javax.swing.JLabel" name="Escudo5">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton5.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -114,7 +180,7 @@
             <Component class="javax.swing.JLabel" name="Escudo6">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton6.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -124,7 +190,7 @@
             <Component class="javax.swing.JLabel" name="Escudo7">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton7.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -134,7 +200,7 @@
             <Component class="javax.swing.JLabel" name="Escudo8">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton8.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -144,7 +210,7 @@
             <Component class="javax.swing.JLabel" name="Escudo9">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton9.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -154,7 +220,7 @@
             <Component class="javax.swing.JLabel" name="Escudo10">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton10.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -164,7 +230,7 @@
             <Component class="javax.swing.JLabel" name="Escudo11">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton11.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -174,7 +240,7 @@
             <Component class="javax.swing.JLabel" name="Escudo12">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton12.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -184,7 +250,7 @@
             <Component class="javax.swing.JLabel" name="Escudo13">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton1.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton13.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -193,7 +259,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="Fondo">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/InterfazBase/FondoBase.png"/>
