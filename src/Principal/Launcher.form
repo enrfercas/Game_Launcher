@@ -34,6 +34,12 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanelContainer">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection component="Form" name="maximumSize" type="property"/>
+        </Property>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+      </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
         <Property name="useNullLayout" type="boolean" value="false"/>
@@ -81,14 +87,14 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="Escudo1">
+            <Component class="javax.swing.JLabel" name="Escudo0">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton0.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton2.png"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Escudo1MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Escudo0MouseClicked"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Escudo2">
@@ -101,14 +107,14 @@
                 <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Escudo2MouseClicked"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="Escudo0">
+            <Component class="javax.swing.JLabel" name="Escudo1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton2.png"/>
+                  <Image iconType="3" name="/InterfazBase/Escudos/LauncherButton0.png"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Escudo0MouseClicked"/>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Escudo1MouseClicked"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="Escudo3">

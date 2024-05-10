@@ -27,8 +27,10 @@ public class Launcher extends javax.swing.JFrame {
      public void CrearNuevoHomePorIndice(int nGrado)
     {
         Home home = new Home(this,nGrado);
+        home.setSize(1440,880);
         ContentContainer.removeAll();
         ContentContainer.add(home);
+        ContentContainer.revalidate();
         ContentContainer.repaint();
 // lo limpian
                 //añaden la vista
@@ -38,8 +40,10 @@ public class Launcher extends javax.swing.JFrame {
     public void CrearNuevoGamePorIndice(int nGrado, int nGame)
     {
         Game game = new Game(this,nGrado,nGame);
+         game.setSize(1440,880);
           ContentContainer.removeAll();
         ContentContainer.add(game);
+         ContentContainer.revalidate();
         ContentContainer.repaint();
     }
     
@@ -55,9 +59,9 @@ public class Launcher extends javax.swing.JFrame {
         jPanelContainer = new javax.swing.JPanel();
         ContentContainer = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        Escudo1 = new javax.swing.JLabel();
-        Escudo2 = new javax.swing.JLabel();
         Escudo0 = new javax.swing.JLabel();
+        Escudo2 = new javax.swing.JLabel();
+        Escudo1 = new javax.swing.JLabel();
         Escudo3 = new javax.swing.JLabel();
         Escudo4 = new javax.swing.JLabel();
         Escudo5 = new javax.swing.JLabel();
@@ -73,6 +77,8 @@ public class Launcher extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanelContainer.setMaximumSize(getMaximumSize());
+        jPanelContainer.setName(""); // NOI18N
         jPanelContainer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ContentContainer.setMaximumSize(new java.awt.Dimension(1440, 880));
@@ -95,13 +101,13 @@ public class Launcher extends javax.swing.JFrame {
 
         jPanel1.setOpaque(false);
 
-        Escudo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton0.png"))); // NOI18N
-        Escudo1.addMouseListener(new java.awt.event.MouseAdapter() {
+        Escudo0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton2.png"))); // NOI18N
+        Escudo0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Escudo1MouseClicked(evt);
+                Escudo0MouseClicked(evt);
             }
         });
-        jPanel1.add(Escudo1);
+        jPanel1.add(Escudo0);
 
         Escudo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
         Escudo2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -111,13 +117,13 @@ public class Launcher extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo2);
 
-        Escudo0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton2.png"))); // NOI18N
-        Escudo0.addMouseListener(new java.awt.event.MouseAdapter() {
+        Escudo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton0.png"))); // NOI18N
+        Escudo1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Escudo0MouseClicked(evt);
+                Escudo1MouseClicked(evt);
             }
         });
-        jPanel1.add(Escudo0);
+        jPanel1.add(Escudo1);
 
         Escudo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton3.png"))); // NOI18N
         Escudo3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -228,59 +234,74 @@ public class Launcher extends javax.swing.JFrame {
 
     private void Escudo0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
+         
         
     }//GEN-LAST:event_Escudo0MouseClicked
 
     private void Escudo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo1MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo1MouseClicked
 
     private void Escudo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo2MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo2MouseClicked
 
     private void Escudo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo3MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo3MouseClicked
 
     private void Escudo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo4MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo4MouseClicked
 
     private void Escudo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo5MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo5MouseClicked
 
     private void Escudo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo6MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo6MouseClicked
 
     private void Escudo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo7MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo7MouseClicked
 
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo8MouseClicked
 
     private void Escudo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo9MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo9MouseClicked
 
     private void Escudo10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo10MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo10MouseClicked
 
     private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo11MouseClicked
 
     private void Escudo12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo12MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo12MouseClicked
 
     private void Escudo13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseClicked
         // TODO add your handling code here:
+         CrearNuevoHomePorIndice(0);
     }//GEN-LAST:event_Escudo13MouseClicked
 
     /**

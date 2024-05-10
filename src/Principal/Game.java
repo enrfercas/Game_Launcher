@@ -39,129 +39,116 @@ public class Game extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        CarruselPanel = new javax.swing.JPanel();
+        Bolitas = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        flechaD = new javax.swing.JLabel();
+        flechaIz = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        DescripcionPanel = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextPane1 = new javax.swing.JTextPane();
 
         setMaximumSize(new java.awt.Dimension(1440, 880));
         setMinimumSize(new java.awt.Dimension(1440, 880));
+        setName(""); // NOI18N
+        setOpaque(false);
         setPreferredSize(new java.awt.Dimension(1440, 880));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Miniaturas/Helicoptero/Helicoptero0.png"))); // NOI18N
+        CarruselPanel.setMaximumSize(new java.awt.Dimension(1440, 580));
+        CarruselPanel.setMinimumSize(new java.awt.Dimension(1440, 580));
+        CarruselPanel.setOpaque(false);
+        CarruselPanel.setPreferredSize(new java.awt.Dimension(1440, 580));
+        CarruselPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png"))); // NOI18N
-        jPanel1.add(jLabel2);
+        Bolitas.setOpaque(false);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel1.add(jLabel3);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel1.add(jLabel4);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png"))); // NOI18N
+        Bolitas.add(jLabel4);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel1.add(jLabel5);
+        Bolitas.add(jLabel5);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel1.add(jLabel6);
+        Bolitas.add(jLabel6);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha derecha.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
+        Bolitas.add(jLabel7);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha izquierda.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
+        Bolitas.add(jLabel8);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
+        CarruselPanel.add(Bolitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, 180, 30));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
+        flechaD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha derecha.png"))); // NOI18N
+        CarruselPanel.add(flechaD, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 220, 30, 60));
 
-        jLabel11.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Embarque y desembarque en helicóptero");
+        flechaIz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha izquierda.png"))); // NOI18N
+        CarruselPanel.add(flechaIz, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 30, 80));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac accumsan ipsum. Curabitur congue diam at felis luctus tristique sed et libero. Donec et leo vitae metus sagittis egestas vitae ac nibh. Nunc ut ligula sapien. \n\nFusce cursus elementum ex, vel lacinia lorem egestas eu. Donec pellentesque lectus eu commodo cursus. Quisque urna ex, fermentum a est ut, efficitur ultricies nibh. Fusce commodo nunc erat, nec sagittis tortor malesuada non. Sed ac semper magna, nec tincidunt erat. Suspendisse potenti. Duis porta turpis sed pharetra gravida. In finibus nec lorem non gravida. Duis ullamcorper et diam et aliquam. Suspendisse cursus justo a neque suscipit ullamcorper.");
-        jTextArea1.setOpaque(false);
-        jScrollPane1.setViewportView(jTextArea1);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Miniaturas/Ascensor/Ascensor0.png"))); // NOI18N
+        CarruselPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 880, 490));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
+        CarruselPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 770, 430));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
+        CarruselPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 770, 430));
+
+        jLabel9.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Embarque y desembarque en helicoptero");
+        jLabel9.setToolTipText("");
+        CarruselPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 360, 40));
+
+        DescripcionPanel.setMaximumSize(new java.awt.Dimension(1440, 300));
+        DescripcionPanel.setMinimumSize(new java.awt.Dimension(1440, 300));
+        DescripcionPanel.setOpaque(false);
+        DescripcionPanel.setPreferredSize(new java.awt.Dimension(1440, 300));
+        DescripcionPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextPane1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextPane1.setText("Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno \nestándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido\n usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió ");
+        jTextPane1.setOpaque(false);
+        jScrollPane1.setViewportView(jTextPane1);
+
+        DescripcionPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 710, 100));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(460, 460, 460)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(60, 60, 60)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel8))
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel7))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(230, 230, 230)
-                        .addComponent(jLabel10))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CarruselPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DescripcionPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(530, 530, 530)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41)
-                        .addComponent(jLabel8))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(260, 260, 260)
-                        .addComponent(jLabel7))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(60, 60, 60)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(CarruselPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DescripcionPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Bolitas;
+    private javax.swing.JPanel CarruselPanel;
+    private javax.swing.JPanel DescripcionPanel;
+    private javax.swing.JLabel flechaD;
+    private javax.swing.JLabel flechaIz;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -170,9 +157,7 @@ public class Game extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
