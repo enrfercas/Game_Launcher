@@ -52,6 +52,7 @@ public class Game extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         DescripcionPanel = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -102,11 +103,14 @@ public class Game extends javax.swing.JPanel {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
         CarruselPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 770, 430));
 
-        jLabel9.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Raleway Black", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Embarque y desembarque en helicoptero");
         jLabel9.setToolTipText("");
-        CarruselPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 360, 40));
+        CarruselPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 410, 40));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Barrita aislada descripción.png"))); // NOI18N
+        CarruselPanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 10, 40));
 
         DescripcionPanel.setMaximumSize(new java.awt.Dimension(1440, 300));
         DescripcionPanel.setMinimumSize(new java.awt.Dimension(1440, 300));
@@ -117,7 +121,7 @@ public class Game extends javax.swing.JPanel {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Comenzar.png"))); // NOI18N
         DescripcionPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 60, -1, 50));
 
-        jLabel12.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Raleway", 0, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("<html>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno  estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido  usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió </html>");
         DescripcionPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 120));
@@ -152,6 +156,7 @@ public class Game extends javax.swing.JPanel {
     private javax.swing.JLabel flechaIz;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
