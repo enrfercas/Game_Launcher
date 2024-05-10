@@ -47,13 +47,17 @@ public class Home extends javax.swing.JPanel {
         Grua = new javax.swing.JLabel();
         Bomberos = new javax.swing.JLabel();
 
+        setOpaque(false);
+
         jPanel1.setMaximumSize(new java.awt.Dimension(1440, 880));
         jPanel1.setMinimumSize(new java.awt.Dimension(1440, 880));
+        jPanel1.setOpaque(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(1440, 880));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setMaximumSize(new java.awt.Dimension(1400, 840));
         jPanel2.setMinimumSize(new java.awt.Dimension(1400, 840));
+        jPanel2.setOpaque(false);
         jPanel2.setPreferredSize(new java.awt.Dimension(1400, 840));
         jPanel2.setLayout(new java.awt.GridLayout(2, 3));
 

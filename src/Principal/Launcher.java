@@ -18,6 +18,7 @@ public class Launcher extends javax.swing.JFrame {
      * Creates new form Pantalla
      */
     public Launcher() {
+        
         initComponents();
         
         CrearNuevoHomePorIndice(0);
@@ -77,7 +78,7 @@ public class Launcher extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanelContainer.setMaximumSize(getMaximumSize());
+        jPanelContainer.setMaximumSize(new java.awt.Dimension(1920, 1080));
         jPanelContainer.setName(""); // NOI18N
         jPanelContainer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
