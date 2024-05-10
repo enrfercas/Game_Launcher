@@ -100,7 +100,7 @@ public class Game extends javax.swing.JPanel {
         CarruselPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 770, 430));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
-        CarruselPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 770, 430));
+        CarruselPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 770, 430));
 
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
