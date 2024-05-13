@@ -34,16 +34,7 @@ public class Game extends javax.swing.JPanel {
         parent.indexGame = _indexGame;
     }
     
-    void UpdateBolitas(){
-        for (int i = 0; i < 5; i++){
-            
-            if( i != index ) {
-                this.Bolitas.add(BolitaVacia);
-            }
-            bolitas.add(BolitaLlena);
-        }
-        System.out.print(bolitas);
-    }
+    
     
     void UpdateInfo(int _indexGrado, int _indexGame)
     {
@@ -52,8 +43,11 @@ public class Game extends javax.swing.JPanel {
         imagenCarrusel.setIcon(new ImageIcon(imagenes.get(0)));
     }
     
+    
+  
+    
     void UpdateArray (String nombreJuego){
-        UpdateBolitas();
+        
         imagenes.clear();
         for (int i = 0; i < 5; i++) {
             imagenes.add("src/InterfazGame/Miniaturas/" + nombreJuego + "/" + nombreJuego + i + ".png");
@@ -188,36 +182,49 @@ public class Game extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+     private int indexBolitaLlena = 0;
     private void flechaIzMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_flechaIzMouseClicked
                           
-        index--;
-        
-        if(index < 0){
-          index = 4;          
-        }
-        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
-        UpdateBolitas();   
-        this.Bolitas.revalidate();
-        this.Bolitas.repaint();
-        
-        
+       index--;
+    
+    if(index < 0){
+        index = 4;          
+    }
+    imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
+    
+    // Actualizar la posición de la bolita llena
+    indexBolitaLlena = (indexBolitaLlena - 1 + 5) % 5;
+    mostrarBolitas();
     }//GEN-LAST:event_flechaIzMouseClicked
 
     private void flechaDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_flechaDMouseClicked
-        
-        index++;
-        if(index > 4) {
-            index = 0;
-        }
-        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
-                
-        UpdateBolitas();
-        
-        this.Bolitas.revalidate();
-        this.Bolitas.repaint();
+       index++;
+    if(index > 4) {
+        index = 0;
+    }
+    imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
+    
+    // Actualizar la posición de la bolita llena
+   indexBolitaLlena = (indexBolitaLlena + 1) % 5;
+    mostrarBolitas();
     }//GEN-LAST:event_flechaDMouseClicked
 
+    
+  private void mostrarBolitas() {
+    BolitaLlena.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png")));
+    BolitaVacia.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png")));
+    BolitaVacia1.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png")));
+    BolitaVacia2.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png")));
+    BolitaVacia3.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png")));
 
+    switch (indexBolitaLlena) {
+        case 0 -> BolitaLlena.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png")));
+        case 1 -> BolitaVacia.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png")));
+        case 2 -> BolitaVacia1.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png")));
+        case 3 -> BolitaVacia2.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png")));
+        case 4 -> BolitaVacia3.setIcon(new ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png")));
+    }
+}
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BolitaLlena;
     private javax.swing.JLabel BolitaVacia;
