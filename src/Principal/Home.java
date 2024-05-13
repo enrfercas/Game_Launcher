@@ -72,22 +72,47 @@ public class Home extends javax.swing.JPanel {
 
         Rcp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton1.png"))); // NOI18N
         Rcp.setName(""); // NOI18N
+        Rcp.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RcpMouseClicked(evt);
+            }
+        });
         jPanel2.add(Rcp);
 
         Fire.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton2.png"))); // NOI18N
         Fire.setName(""); // NOI18N
+        Fire.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FireMouseClicked(evt);
+            }
+        });
         jPanel2.add(Fire);
 
         Robot.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton3.png"))); // NOI18N
         Robot.setName(""); // NOI18N
+        Robot.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RobotMouseClicked(evt);
+            }
+        });
         jPanel2.add(Robot);
 
         Grua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton4.png"))); // NOI18N
         Grua.setName(""); // NOI18N
+        Grua.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                GruaMouseClicked(evt);
+            }
+        });
         jPanel2.add(Grua);
 
         Bomberos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton5.png"))); // NOI18N
         Bomberos.setName(""); // NOI18N
+        Bomberos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BomberosMouseClicked(evt);
+            }
+        });
         jPanel2.add(Bomberos);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
@@ -111,6 +136,26 @@ public class Home extends javax.swing.JPanel {
     private void HelicopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HelicopMouseClicked
         parent.CrearNuevoGamePorIndice(parent.indexGrado,0);
     }//GEN-LAST:event_HelicopMouseClicked
+
+    private void RcpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RcpMouseClicked
+        parent.CrearNuevoGamePorIndice(parent.indexGrado,5);
+    }//GEN-LAST:event_RcpMouseClicked
+
+    private void FireMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FireMouseClicked
+         parent.CrearNuevoGamePorIndice(parent.indexGrado,2);
+    }//GEN-LAST:event_FireMouseClicked
+
+    private void RobotMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RobotMouseClicked
+         parent.CrearNuevoGamePorIndice(parent.indexGrado,3);
+    }//GEN-LAST:event_RobotMouseClicked
+
+    private void GruaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GruaMouseClicked
+         parent.CrearNuevoGamePorIndice(parent.indexGrado,4);
+    }//GEN-LAST:event_GruaMouseClicked
+
+    private void BomberosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BomberosMouseClicked
+         parent.CrearNuevoGamePorIndice(parent.indexGrado,5);
+    }//GEN-LAST:event_BomberosMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -1,5 +1,7 @@
 package Principal;
 
+import javax.swing.JPanel;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -41,13 +43,18 @@ public class Launcher extends javax.swing.JFrame {
     public void CrearNuevoGamePorIndice(int nGrado, int nGame)
     {
         Game game = new Game(this,nGrado,nGame);
-         game.setSize(1440,880);
-          ContentContainer.removeAll();
-        ContentContainer.add(game);
-         ContentContainer.revalidate();
-        ContentContainer.repaint();
+        game.UpdateInfo(indexGrado, indexGame);
+        MostrarJPanel (game);
+        
     }
     
+    public void MostrarJPanel(JPanel panel){
+       panel.setSize(1440,880);
+        ContentContainer.removeAll();
+        ContentContainer.add(panel);
+        ContentContainer.revalidate();
+        ContentContainer.repaint();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -79,6 +86,7 @@ public class Launcher extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
+        setUndecorated(true);
 
         jPanelContainer.setMaximumSize(new java.awt.Dimension(1920, 1080));
         jPanelContainer.setName(""); // NOI18N

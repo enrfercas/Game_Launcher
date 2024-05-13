@@ -4,11 +4,21 @@
  */
 package Principal;
 
+import java.util.ArrayList;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 /**
  *
  * @author casas
  */
 public class Game extends javax.swing.JPanel {
+    
+    ArrayList<String> imagenes = new ArrayList();
+    int index = 0;
+    ArrayList<JLabel> bolitas = new ArrayList();
+    
+    
 
     Launcher parent;
     /**
@@ -18,15 +28,36 @@ public class Game extends javax.swing.JPanel {
      * @param _indexGame
      */
     public Game(Launcher _parent ,int _indexGrado, int _indexGame) {
-        initComponents();
-        
+        initComponents();            
         parent = _parent;
         parent.indexGrado = _indexGrado;
         parent.indexGame = _indexGame;
     }
     
+    void UpdateBolitas(){
+        for (int i = 0; i < 5; i++){
+            
+            if( i != index ) {
+                this.Bolitas.add(BolitaVacia);
+            }
+            bolitas.add(BolitaLlena);
+        }
+        System.out.print(bolitas);
+    }
+    
     void UpdateInfo(int _indexGrado, int _indexGame)
     {
+        // Aquí recuperamos el nombre del juego de la "base de datos JSON" en función de _indexGrado e _indexGame   elJuego = JSON(IndexGra, IngexGame)
+        UpdateArray( "Embarque" );
+        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(0)));
+    }
+    
+    void UpdateArray (String nombreJuego){
+        UpdateBolitas();
+        imagenes.clear();
+        for (int i = 0; i < 5; i++) {
+            imagenes.add("src/InterfazGame/Miniaturas/" + nombreJuego + "/" + nombreJuego + i + ".png");
+        }
         
     }
 
@@ -41,14 +72,14 @@ public class Game extends javax.swing.JPanel {
 
         CarruselPanel = new javax.swing.JPanel();
         Bolitas = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        BolitaLlena = new javax.swing.JLabel();
+        BolitaVacia = new javax.swing.JLabel();
+        BolitaVacia1 = new javax.swing.JLabel();
+        BolitaVacia2 = new javax.swing.JLabel();
+        BolitaVacia3 = new javax.swing.JLabel();
         flechaD = new javax.swing.JLabel();
         flechaIz = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        imagenCarrusel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -71,31 +102,41 @@ public class Game extends javax.swing.JPanel {
 
         Bolitas.setOpaque(false);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png"))); // NOI18N
-        Bolitas.add(jLabel4);
+        BolitaLlena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png"))); // NOI18N
+        Bolitas.add(BolitaLlena);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(jLabel5);
+        BolitaVacia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
+        Bolitas.add(BolitaVacia);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(jLabel6);
+        BolitaVacia1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
+        Bolitas.add(BolitaVacia1);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(jLabel7);
+        BolitaVacia2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
+        Bolitas.add(BolitaVacia2);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(jLabel8);
+        BolitaVacia3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
+        Bolitas.add(BolitaVacia3);
 
         CarruselPanel.add(Bolitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, 180, 30));
 
         flechaD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha derecha.png"))); // NOI18N
+        flechaD.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                flechaDMouseClicked(evt);
+            }
+        });
         CarruselPanel.add(flechaD, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 220, 30, 60));
 
         flechaIz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha izquierda.png"))); // NOI18N
+        flechaIz.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                flechaIzMouseClicked(evt);
+            }
+        });
         CarruselPanel.add(flechaIz, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 30, 80));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Miniaturas/Ascensor/Ascensor0.png"))); // NOI18N
-        CarruselPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 880, 490));
+        imagenCarrusel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Miniaturas/Ascensor/Ascensor0.png"))); // NOI18N
+        CarruselPanel.add(imagenCarrusel, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 880, 490));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
         CarruselPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 770, 430));
@@ -147,24 +188,53 @@ public class Game extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void flechaIzMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_flechaIzMouseClicked
+                          
+        index--;
+        
+        if(index < 0){
+          index = 4;          
+        }
+        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
+        UpdateBolitas();   
+        this.Bolitas.revalidate();
+        this.Bolitas.repaint();
+        
+        
+    }//GEN-LAST:event_flechaIzMouseClicked
+
+    private void flechaDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_flechaDMouseClicked
+        
+        index++;
+        if(index > 4) {
+            index = 0;
+        }
+        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
+                
+        UpdateBolitas();
+        
+        this.Bolitas.revalidate();
+        this.Bolitas.repaint();
+    }//GEN-LAST:event_flechaDMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BolitaLlena;
+    private javax.swing.JLabel BolitaVacia;
+    private javax.swing.JLabel BolitaVacia1;
+    private javax.swing.JLabel BolitaVacia2;
+    private javax.swing.JLabel BolitaVacia3;
     private javax.swing.JPanel Bolitas;
     private javax.swing.JPanel CarruselPanel;
     private javax.swing.JPanel DescripcionPanel;
     private javax.swing.JLabel flechaD;
     private javax.swing.JLabel flechaIz;
+    private javax.swing.JLabel imagenCarrusel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
