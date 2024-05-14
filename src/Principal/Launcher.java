@@ -153,6 +153,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo0);
 
         Escudo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo2.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo2.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo2.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -170,6 +171,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo2);
 
         Escudo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton0.png"))); // NOI18N
+        Escudo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo1.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo1.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo1.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -187,6 +189,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo1);
 
         Escudo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton3.png"))); // NOI18N
+        Escudo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo3.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo3.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo3.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -204,6 +207,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo3);
 
         Escudo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton4.png"))); // NOI18N
+        Escudo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo4.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo4.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo4.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -221,6 +225,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo4);
 
         Escudo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton5.png"))); // NOI18N
+        Escudo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo5.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo5.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo5.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -238,6 +243,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo5);
 
         Escudo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton6.png"))); // NOI18N
+        Escudo6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo6.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo6.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo6.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -255,6 +261,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo6);
 
         Escudo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton7.png"))); // NOI18N
+        Escudo7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo7.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo7.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo7.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -272,6 +279,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo7);
 
         Escudo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton8.png"))); // NOI18N
+        Escudo8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo8.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo8.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo8.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -289,6 +297,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo8);
 
         Escudo9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton9.png"))); // NOI18N
+        Escudo9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo9.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo9.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo9.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -306,6 +315,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo9);
 
         Escudo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton10.png"))); // NOI18N
+        Escudo10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo10.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo10.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo10.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -323,6 +333,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo10);
 
         Escudo11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton11.png"))); // NOI18N
+        Escudo11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo11.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo11.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo11.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -340,6 +351,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo11);
 
         Escudo12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton12.png"))); // NOI18N
+        Escudo12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo12.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo12.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo12.setPreferredSize(new java.awt.Dimension(108, 120));
@@ -357,6 +369,7 @@ public class Launcher extends javax.swing.JFrame {
         jPanel1.add(Escudo12);
 
         Escudo13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton13.png"))); // NOI18N
+        Escudo13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo13.setMaximumSize(new java.awt.Dimension(108, 120));
         Escudo13.setMinimumSize(new java.awt.Dimension(108, 120));
         Escudo13.setPreferredSize(new java.awt.Dimension(108, 120));
