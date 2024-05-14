@@ -32,12 +32,12 @@ public class Launcher extends javax.swing.JFrame {
         
             escudos.add(Escudo0);
             escudos.add(Escudo1);
-            escudos.add(Escudo2);
+            escudos.add(Escudo2);*/
             
             for( int i = 0; i < escudos.size(); i++){
             
                 
-            }*/
+            }
 
         
         CrearNuevoHomePorIndice(0);
@@ -128,16 +128,17 @@ public class Launcher extends javax.swing.JFrame {
             .addGap(0, 880, Short.MAX_VALUE)
         );
 
-        jPanelContainer.add(ContentContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 1440, 880));
+        jPanelContainer.add(ContentContainer, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 1440, 880));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1514, 121));
         jPanel1.setOpaque(false);
+        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 1, 5));
 
         Escudo0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton2.png"))); // NOI18N
         Escudo0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Escudo0.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo0.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo0.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo0.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo0.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo0.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo0MouseClicked(evt);
@@ -149,216 +150,228 @@ public class Launcher extends javax.swing.JFrame {
                 Escudo0MouseExited(evt);
             }
         });
+        jPanel1.add(Escudo0);
 
         Escudo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
-        Escudo2.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo2.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo2.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo2.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo2.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo2.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo2MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo2MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo2);
 
         Escudo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton0.png"))); // NOI18N
-        Escudo1.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo1.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo1.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo1.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo1.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo1.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo1MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo1MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo1);
 
         Escudo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton3.png"))); // NOI18N
-        Escudo3.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo3.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo3.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo3.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo3.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo3.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo3MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo3MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo3);
 
         Escudo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton4.png"))); // NOI18N
-        Escudo4.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo4.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo4.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo4.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo4.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo4.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo4MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo4MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo4);
 
         Escudo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton5.png"))); // NOI18N
-        Escudo5.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo5.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo5.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo5.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo5.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo5.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo5MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo5MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo5);
 
         Escudo6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton6.png"))); // NOI18N
-        Escudo6.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo6.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo6.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo6.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo6.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo6.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo6MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo6MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo6);
 
         Escudo7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton7.png"))); // NOI18N
-        Escudo7.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo7.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo7.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo7.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo7.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo7.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo7MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo7MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo7);
 
         Escudo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton8.png"))); // NOI18N
-        Escudo8.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo8.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo8.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo8.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo8.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo8.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo8MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo8MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo8);
 
         Escudo9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton9.png"))); // NOI18N
-        Escudo9.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo9.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo9.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo9.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo9.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo9.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo9MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo9MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo9);
 
         Escudo10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton10.png"))); // NOI18N
-        Escudo10.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo10.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo10.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo10.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo10.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo10.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo10MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo10MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo10);
 
         Escudo11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton11.png"))); // NOI18N
-        Escudo11.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo11.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo11.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo11.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo11.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo11.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo11MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo11MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo11);
 
         Escudo12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton12.png"))); // NOI18N
-        Escudo12.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo12.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo12.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo12.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo12.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo12.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo12MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo12MouseExited(evt);
+            }
         });
+        jPanel1.add(Escudo12);
 
         Escudo13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton13.png"))); // NOI18N
-        Escudo13.setMaximumSize(new java.awt.Dimension(114, 120));
-        Escudo13.setMinimumSize(new java.awt.Dimension(114, 120));
-        Escudo13.setPreferredSize(new java.awt.Dimension(114, 120));
+        Escudo13.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo13.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo13.setPreferredSize(new java.awt.Dimension(108, 120));
         Escudo13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Escudo13MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo13MouseExited(evt);
+            }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(Escudo0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(Escudo13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(Escudo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(Escudo13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jPanel1.add(Escudo13);
 
         jPanelContainer.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 1550, 110));
 
@@ -460,6 +473,138 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseExited
         this.Escudo0.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton0.png"));
     }//GEN-LAST:event_Escudo0MouseExited
+
+    private void Escudo2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo2MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton2.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo2.setIcon(img2);
+    }//GEN-LAST:event_Escudo2MouseEntered
+
+    private void Escudo2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo2MouseExited
+        this.Escudo2.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton2.png"));
+    }//GEN-LAST:event_Escudo2MouseExited
+
+    private void Escudo1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo1MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton1.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo1.setIcon(img2);
+    }//GEN-LAST:event_Escudo1MouseEntered
+
+    private void Escudo1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo1MouseExited
+        this.Escudo1.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton1.png"));
+    }//GEN-LAST:event_Escudo1MouseExited
+
+    private void Escudo3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo3MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton3.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo3.setIcon(img2);
+    }//GEN-LAST:event_Escudo3MouseEntered
+
+    private void Escudo3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo3MouseExited
+        this.Escudo3.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton3.png"));
+
+    }//GEN-LAST:event_Escudo3MouseExited
+
+    private void Escudo4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo4MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton4.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo4.setIcon(img2);
+    }//GEN-LAST:event_Escudo4MouseEntered
+
+    private void Escudo4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo4MouseExited
+        this.Escudo4.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton4.png"));
+    }//GEN-LAST:event_Escudo4MouseExited
+
+    private void Escudo5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo5MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton5.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo5.setIcon(img2);
+    }//GEN-LAST:event_Escudo5MouseEntered
+
+    private void Escudo5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo5MouseExited
+        this.Escudo5.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton5.png"));
+    }//GEN-LAST:event_Escudo5MouseExited
+
+    private void Escudo6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo6MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton6.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo6.setIcon(img2);
+    }//GEN-LAST:event_Escudo6MouseEntered
+
+    private void Escudo6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo6MouseExited
+        this.Escudo6.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton6.png"));
+
+    }//GEN-LAST:event_Escudo6MouseExited
+
+    private void Escudo7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo7MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton7.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo7.setIcon(img2);
+    }//GEN-LAST:event_Escudo7MouseEntered
+
+    private void Escudo7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo7MouseExited
+        this.Escudo7.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton7.png"));
+    }//GEN-LAST:event_Escudo7MouseExited
+
+    private void Escudo8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton8.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo8.setIcon(img2);
+    }//GEN-LAST:event_Escudo8MouseEntered
+
+    private void Escudo8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseExited
+        this.Escudo8.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton8.png"));
+    }//GEN-LAST:event_Escudo8MouseExited
+
+    private void Escudo9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo9MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton9.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo9.setIcon(img2);
+    }//GEN-LAST:event_Escudo9MouseEntered
+
+    private void Escudo9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo9MouseExited
+        this.Escudo9.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton9.png"));
+    }//GEN-LAST:event_Escudo9MouseExited
+
+    private void Escudo10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo10MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton10.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo10.setIcon(img2);
+    }//GEN-LAST:event_Escudo10MouseEntered
+
+    private void Escudo10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo10MouseExited
+        this.Escudo10.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton10.png"));
+    }//GEN-LAST:event_Escudo10MouseExited
+
+    private void Escudo11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton11.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo11.setIcon(img2);
+    }//GEN-LAST:event_Escudo11MouseEntered
+
+    private void Escudo12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo12MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton12.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo12.setIcon(img2);
+    }//GEN-LAST:event_Escudo12MouseEntered
+
+    private void Escudo12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo12MouseExited
+        this.Escudo12.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton12.png"));
+    }//GEN-LAST:event_Escudo12MouseExited
+
+    private void Escudo11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseExited
+        this.Escudo11.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton11.png"));
+    }//GEN-LAST:event_Escudo11MouseExited
+
+    private void Escudo13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseEntered
+        Image img= new ImageIcon("src/InterfazBase/Escudos/LauncherButton13.png").getImage();
+        ImageIcon img2=new ImageIcon(img.getScaledInstance(120, 130, Image.SCALE_SMOOTH));
+        this.Escudo13.setIcon(img2);
+    }//GEN-LAST:event_Escudo13MouseEntered
+
+    private void Escudo13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseExited
+        this.Escudo13.setIcon(new ImageIcon("src/InterfazBase/Escudos/LauncherButton13.png"));
+    }//GEN-LAST:event_Escudo13MouseExited
 
     /**
      * @param args the command line arguments

@@ -62,6 +62,7 @@ public class Home extends javax.swing.JPanel {
         jPanel2.setLayout(new java.awt.GridLayout(2, 3));
 
         Helicop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton0.png"))); // NOI18N
+        Helicop.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Helicop.setName(""); // NOI18N
         Helicop.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -71,6 +72,7 @@ public class Home extends javax.swing.JPanel {
         jPanel2.add(Helicop);
 
         Rcp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton1.png"))); // NOI18N
+        Rcp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Rcp.setName(""); // NOI18N
         Rcp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -80,6 +82,7 @@ public class Home extends javax.swing.JPanel {
         jPanel2.add(Rcp);
 
         Fire.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton2.png"))); // NOI18N
+        Fire.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Fire.setName(""); // NOI18N
         Fire.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -89,6 +92,7 @@ public class Home extends javax.swing.JPanel {
         jPanel2.add(Fire);
 
         Robot.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton3.png"))); // NOI18N
+        Robot.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Robot.setName(""); // NOI18N
         Robot.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -98,6 +102,7 @@ public class Home extends javax.swing.JPanel {
         jPanel2.add(Robot);
 
         Grua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton4.png"))); // NOI18N
+        Grua.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Grua.setName(""); // NOI18N
         Grua.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -107,6 +112,7 @@ public class Home extends javax.swing.JPanel {
         jPanel2.add(Grua);
 
         Bomberos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazHome/Miniaturas simuladores/HomeButton5.png"))); // NOI18N
+        Bomberos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Bomberos.setName(""); // NOI18N
         Bomberos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
