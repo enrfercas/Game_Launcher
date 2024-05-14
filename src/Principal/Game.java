@@ -4,9 +4,10 @@
  */
 package Principal;
 
+import java.awt.FlowLayout;
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
+
 
 /**
  *
@@ -16,7 +17,7 @@ public class Game extends javax.swing.JPanel {
     
     ArrayList<String> imagenes = new ArrayList();
     int index = 0;
-    ArrayList<JLabel> bolitas = new ArrayList();
+    
     
     
 
@@ -32,28 +33,47 @@ public class Game extends javax.swing.JPanel {
         parent = _parent;
         parent.indexGrado = _indexGrado;
         parent.indexGame = _indexGame;
+        initializeBolitas();
+        UpdateBolitas();
     }
     
-    void UpdateBolitas(){
-        for (int i = 0; i < 5; i++){
-            
-            if( i != index ) {
-                this.Bolitas.add(BolitaVacia);
-            }
-            bolitas.add(BolitaLlena);
+    private void initializeBolitas() {
+        // Inicializar las bolitas como instancias de BolitaLlena
+        Bolitas.setLayout(new FlowLayout());
+        for (int i = 0; i < 5; i++) {
+            BolitaLlena bolita = new BolitaLlena();
+            Bolitas.add(bolita);
         }
-        System.out.print(bolitas);
     }
+
+    
+    void UpdateBolitas() {
+    // Iterar sobre todas las bolitas y cambiar su imagen según la posición actual del carrusel
+    for (int i = 0; i < 5; i++) {
+        if (i == index) {
+            ((BolitaLlena) Bolitas.getComponent(i)).setLlena(true);
+        } else {
+            ((BolitaLlena) Bolitas.getComponent(i)).setLlena(false);
+        }
+    }
+    
+    // Revalidar y repintar el panel Bolitas después de actualizar las bolitas
+    Bolitas.revalidate();
+    Bolitas.repaint();
+}
+
+
     
     void UpdateInfo(int _indexGrado, int _indexGame)
     {
         // Aquí recuperamos el nombre del juego de la "base de datos JSON" en función de _indexGrado e _indexGame   elJuego = JSON(IndexGra, IngexGame)
-        UpdateArray( "Embarque" );
+        
+        UpdateArray( "EPIS" );
         imagenCarrusel.setIcon(new ImageIcon(imagenes.get(0)));
     }
     
     void UpdateArray (String nombreJuego){
-        UpdateBolitas();
+        
         imagenes.clear();
         for (int i = 0; i < 5; i++) {
             imagenes.add("src/InterfazGame/Miniaturas/" + nombreJuego + "/" + nombreJuego + i + ".png");
@@ -72,11 +92,6 @@ public class Game extends javax.swing.JPanel {
 
         CarruselPanel = new javax.swing.JPanel();
         Bolitas = new javax.swing.JPanel();
-        BolitaLlena = new javax.swing.JLabel();
-        BolitaVacia = new javax.swing.JLabel();
-        BolitaVacia1 = new javax.swing.JLabel();
-        BolitaVacia2 = new javax.swing.JLabel();
-        BolitaVacia3 = new javax.swing.JLabel();
         flechaD = new javax.swing.JLabel();
         flechaIz = new javax.swing.JLabel();
         imagenCarrusel = new javax.swing.JLabel();
@@ -101,22 +116,6 @@ public class Game extends javax.swing.JPanel {
         CarruselPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Bolitas.setOpaque(false);
-
-        BolitaLlena.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselFilled.png"))); // NOI18N
-        Bolitas.add(BolitaLlena);
-
-        BolitaVacia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(BolitaVacia);
-
-        BolitaVacia1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(BolitaVacia1);
-
-        BolitaVacia2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(BolitaVacia2);
-
-        BolitaVacia3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/PuntoCarruselEmpty.png"))); // NOI18N
-        Bolitas.add(BolitaVacia3);
-
         CarruselPanel.add(Bolitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, 180, 30));
 
         flechaD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha derecha.png"))); // NOI18N
@@ -197,8 +196,7 @@ public class Game extends javax.swing.JPanel {
         }
         imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
         UpdateBolitas();   
-        this.Bolitas.revalidate();
-        this.Bolitas.repaint();
+
         
         
     }//GEN-LAST:event_flechaIzMouseClicked
@@ -209,21 +207,15 @@ public class Game extends javax.swing.JPanel {
         if(index > 4) {
             index = 0;
         }
-        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));
+        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(index)));                
                 
         UpdateBolitas();
         
-        this.Bolitas.revalidate();
-        this.Bolitas.repaint();
+        
     }//GEN-LAST:event_flechaDMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BolitaLlena;
-    private javax.swing.JLabel BolitaVacia;
-    private javax.swing.JLabel BolitaVacia1;
-    private javax.swing.JLabel BolitaVacia2;
-    private javax.swing.JLabel BolitaVacia3;
     private javax.swing.JPanel Bolitas;
     private javax.swing.JPanel CarruselPanel;
     private javax.swing.JPanel DescripcionPanel;
