@@ -1,0 +1,646 @@
+{
+  "grados": [
+    {
+      "nombre": "Grado 1",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 2",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+      "nombre": "Grado 3",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },{
+      "nombre": "Grado 4",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 5",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },{
+      "nombre": "Grado 6",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 7",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 8",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 9",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 10",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 11",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 12",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 13",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    },
+    {
+      "nombre": "Grado 14",
+      "juegos": [
+        {
+          "titulo": "Embarque y desembarque en helicoptero",
+          "imagen": "Embarque",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton0.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        },
+        {
+          "titulo": "Protocolo ante una hemorragia externa",
+          "imagen": "Hemorragia",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton1.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Maniobras de extincion segun la instalacion",
+          "imagen": "Extincion ",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton2.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Tipología y caracteristicas de los EPIS",
+          "imagen": "EPIS",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton3.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+           "titulo": "Señalizacion a helicoptero desde tierra",
+          "imagen": "Helicoptero",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton4.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        },
+        {
+          "titulo": "Rescate en ascensor",
+          "imagen": "Ascensor",
+          "ruta": "src/InterfazHome/Miniaturas simuladores/HomeButton5.png",
+          "descripcion": "<html>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus nulla sit amet mauris vehicula dictum. Quisque suscipit turpis vel sem ultrices eleifend. Nulla cursus vulputate est, at volutpat est tempus non.</html>"
+        
+        }
+      ]
+    }
+      ]
+    }
+  ]
+}
