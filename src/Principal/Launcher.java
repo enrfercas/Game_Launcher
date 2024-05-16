@@ -93,8 +93,8 @@ public class Launcher extends javax.swing.JFrame {
         ContentContainer = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         Escudo0 = new javax.swing.JLabel();
-        Escudo2 = new javax.swing.JLabel();
         Escudo1 = new javax.swing.JLabel();
+        Escudo2 = new javax.swing.JLabel();
         Escudo3 = new javax.swing.JLabel();
         Escudo4 = new javax.swing.JLabel();
         Escudo5 = new javax.swing.JLabel();
@@ -157,24 +157,6 @@ public class Launcher extends javax.swing.JFrame {
         });
         jPanel1.add(Escudo0);
 
-        Escudo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
-        Escudo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Escudo2.setMaximumSize(new java.awt.Dimension(108, 120));
-        Escudo2.setMinimumSize(new java.awt.Dimension(108, 120));
-        Escudo2.setPreferredSize(new java.awt.Dimension(108, 120));
-        Escudo2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Escudo2MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Escudo2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Escudo2MouseExited(evt);
-            }
-        });
-        jPanel1.add(Escudo2);
-
         Escudo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton0.png"))); // NOI18N
         Escudo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Escudo1.setMaximumSize(new java.awt.Dimension(108, 120));
@@ -192,6 +174,24 @@ public class Launcher extends javax.swing.JFrame {
             }
         });
         jPanel1.add(Escudo1);
+
+        Escudo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton1.png"))); // NOI18N
+        Escudo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Escudo2.setMaximumSize(new java.awt.Dimension(108, 120));
+        Escudo2.setMinimumSize(new java.awt.Dimension(108, 120));
+        Escudo2.setPreferredSize(new java.awt.Dimension(108, 120));
+        Escudo2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo2MouseExited(evt);
+            }
+        });
+        jPanel1.add(Escudo2);
 
         Escudo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazBase/Escudos/LauncherButton3.png"))); // NOI18N
         Escudo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -459,7 +459,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo4MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(4);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -470,7 +470,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo5MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(5);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -481,7 +481,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo6MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(6);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -492,7 +492,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo7MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(7);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -503,7 +503,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(8);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -514,7 +514,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo9MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(9);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -525,7 +525,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo10MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(10);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -536,7 +536,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(11);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -547,7 +547,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo12MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(12);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
@@ -558,7 +558,7 @@ public class Launcher extends javax.swing.JFrame {
     private void Escudo13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseClicked
         try {
             // TODO add your handling code here:
-            CrearNuevoHomePorIndice(0);
+            CrearNuevoHomePorIndice(13);
         } catch (IOException ex) {
             Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
         } catch (JSONException ex) {
