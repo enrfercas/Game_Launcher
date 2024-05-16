@@ -4,6 +4,19 @@
  */
 package Principal;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  *
  * @author FedericoGarciaBarrei
@@ -11,23 +24,51 @@ package Principal;
 public class Home extends javax.swing.JPanel {
 
     Launcher parent;
+    ArrayList<String> imagenes = new ArrayList();
     
     /**
      * Creates new form Home
      * @param _parent
      * @param _indexGrado
      */
-    public Home(Launcher _parent, int _indexGrado) {
+    public Home(Launcher _parent, int _indexGrado) throws IOException, JSONException {
         initComponents();
-        
+        System.out.print(UpdateInfo(_indexGrado));
+        JSONArray juegos = UpdateInfo(_indexGrado);
+        UpdateArray(juegos);
+        this.NumeroGrado.setText("Grado número" + _indexGrado);
+
         parent = _parent;
         parent.indexGrado = _indexGrado;
     }
     
-    void UpdateInfo(int _indexGrado)
-    {
-        
+    
+    JSONArray UpdateInfo(int _indexGrado) throws IOException, JSONException {
+    try (BufferedReader br = new BufferedReader(new FileReader("src/DB.json"))) {
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = br.readLine()) != null) {
+            sb.append(line);
+        }
+        JSONObject json = new JSONObject(sb.toString());
+        JSONArray grados = json.getJSONArray("grados");
+        return grados.getJSONObject(_indexGrado).getJSONArray("juegos");
+    } catch (FileNotFoundException ex) {
+        Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+        return new JSONArray(); // Devuelve un JSONArray vacío en caso de error
     }
+}
+
+    
+    void UpdateArray(JSONArray gradoArray) throws JSONException {
+    for (int i = 0; i < 5; i++) {
+        JSONObject juego = gradoArray.getJSONObject(i);
+        String imagen = juego.getString("imagen");
+        imagenes.add("src/InterfazHome/Miniaturas simuladores/" + imagen + ".png");
+    }
+    
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -46,6 +87,7 @@ public class Home extends javax.swing.JPanel {
         Robot = new javax.swing.JLabel();
         Grua = new javax.swing.JLabel();
         Bomberos = new javax.swing.JLabel();
+        NumeroGrado = new javax.swing.JLabel();
 
         setOpaque(false);
 
@@ -123,6 +165,10 @@ public class Home extends javax.swing.JPanel {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
+        NumeroGrado.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        NumeroGrado.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(NumeroGrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 860, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -169,6 +215,7 @@ public class Home extends javax.swing.JPanel {
     private javax.swing.JLabel Fire;
     private javax.swing.JLabel Grua;
     private javax.swing.JLabel Helicop;
+    private javax.swing.JLabel NumeroGrado;
     private javax.swing.JLabel Rcp;
     private javax.swing.JLabel Robot;
     private javax.swing.JPanel jPanel1;

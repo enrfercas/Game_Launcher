@@ -1,10 +1,14 @@
 package Principal;
 
 import java.awt.Image;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import org.json.JSONException;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -25,7 +29,7 @@ public class Launcher extends javax.swing.JFrame {
     /**
      * Creates new form Pantalla
      */
-    public Launcher() {
+    public Launcher() throws IOException, JSONException {
         
         initComponents();
         /*escudos.clear();
@@ -47,10 +51,11 @@ public class Launcher extends javax.swing.JFrame {
 
     }
     
-     public void CrearNuevoHomePorIndice(int nGrado)
+     public void CrearNuevoHomePorIndice(int nGrado) throws IOException, JSONException
     {
         Home home = new Home(this,nGrado);
         home.setSize(1440,880);
+        
         ContentContainer.removeAll();
         ContentContainer.add(home);
         ContentContainer.revalidate();
@@ -406,75 +411,159 @@ public class Launcher extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Escudo0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
          
         
     }//GEN-LAST:event_Escudo0MouseClicked
 
     private void Escudo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo1MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(1);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo1MouseClicked
 
     private void Escudo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo2MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(2);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo2MouseClicked
 
     private void Escudo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo3MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(3);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo3MouseClicked
 
     private void Escudo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo4MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo4MouseClicked
 
     private void Escudo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo5MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo5MouseClicked
 
     private void Escudo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo6MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo6MouseClicked
 
     private void Escudo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo7MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo7MouseClicked
 
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo8MouseClicked
 
     private void Escudo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo9MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo9MouseClicked
 
     private void Escudo10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo10MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo10MouseClicked
 
     private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo11MouseClicked
 
     private void Escudo12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo12MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo12MouseClicked
 
     private void Escudo13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseClicked
-        // TODO add your handling code here:
-         CrearNuevoHomePorIndice(0);
+        try {
+            // TODO add your handling code here:
+            CrearNuevoHomePorIndice(0);
+        } catch (IOException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Escudo13MouseClicked
 
     private void Escudo0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseEntered
@@ -650,7 +739,13 @@ public class Launcher extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Launcher().setVisible(true);
+                try {
+                    new Launcher().setVisible(true);
+                } catch (IOException ex) {
+                    Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (JSONException ex) {
+                    Logger.getLogger(Launcher.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }

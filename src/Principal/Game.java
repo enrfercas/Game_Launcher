@@ -5,8 +5,18 @@
 package Principal;
 
 import java.awt.FlowLayout;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 
 /**
@@ -66,11 +76,10 @@ public class Game extends javax.swing.JPanel {
     
     void UpdateInfo(int _indexGrado, int _indexGame)
     {
-        // Aquí recuperamos el nombre del juego de la "base de datos JSON" en función de _indexGrado e _indexGame   elJuego = JSON(IndexGra, IngexGame)
         
-        UpdateArray( "EPIS" );
-        imagenCarrusel.setIcon(new ImageIcon(imagenes.get(0)));
     }
+        
+    
     
     void UpdateArray (String nombreJuego){
         
