@@ -61,7 +61,7 @@ public class Home extends javax.swing.JPanel {
 
     
     void UpdateArray(JSONArray gradoArray) throws JSONException {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 6; i++) {
         JSONObject juego = gradoArray.getJSONObject(i);
         String imagen = juego.getString("imagen");
         imagenes.add("src/InterfazHome/Miniaturas simuladores/" + imagen + ".png");
@@ -186,27 +186,63 @@ public class Home extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void HelicopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HelicopMouseClicked
-        parent.CrearNuevoGamePorIndice(parent.indexGrado,0);
+        try {
+            parent.CrearNuevoGamePorIndice(parent.indexGrado,0);
+        } catch (IOException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_HelicopMouseClicked
 
     private void RcpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RcpMouseClicked
-        parent.CrearNuevoGamePorIndice(parent.indexGrado,1);
+        try {
+            parent.CrearNuevoGamePorIndice(parent.indexGrado,1);
+        } catch (IOException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_RcpMouseClicked
 
     private void FireMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FireMouseClicked
-         parent.CrearNuevoGamePorIndice(parent.indexGrado,2);
+        try {
+            parent.CrearNuevoGamePorIndice(parent.indexGrado,2);
+        } catch (IOException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_FireMouseClicked
 
     private void RobotMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RobotMouseClicked
-         parent.CrearNuevoGamePorIndice(parent.indexGrado,3);
+        try {
+            parent.CrearNuevoGamePorIndice(parent.indexGrado,3);
+        } catch (IOException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_RobotMouseClicked
 
     private void GruaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_GruaMouseClicked
-         parent.CrearNuevoGamePorIndice(parent.indexGrado,4);
+        try {
+            parent.CrearNuevoGamePorIndice(parent.indexGrado,4);
+        } catch (IOException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_GruaMouseClicked
 
     private void BomberosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BomberosMouseClicked
-         parent.CrearNuevoGamePorIndice(parent.indexGrado,5);
+        try {
+            parent.CrearNuevoGamePorIndice(parent.indexGrado,5);
+        } catch (IOException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JSONException ex) {
+            Logger.getLogger(Home.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_BomberosMouseClicked
 
 

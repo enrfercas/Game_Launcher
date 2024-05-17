@@ -38,12 +38,13 @@ public class Game extends javax.swing.JPanel {
      * @param _indexGrado
      * @param _indexGame
      */
-    public Game(Launcher _parent ,int _indexGrado, int _indexGame) {
+    public Game(Launcher _parent ,int _indexGrado, int _indexGame) throws IOException, JSONException {
         initComponents();            
         parent = _parent;
         parent.indexGrado = _indexGrado;
         parent.indexGame = _indexGame;
         initializeBolitas();
+        UpdateArray(UpdateInfo(_indexGrado, _indexGame));
         UpdateBolitas();
     }
     
@@ -74,10 +75,30 @@ public class Game extends javax.swing.JPanel {
 
 
     
-    void UpdateInfo(int _indexGrado, int _indexGame)
-    {
+    String UpdateInfo(int _indexGrado, int _indexGame) throws IOException, JSONException {
+    try (BufferedReader br = new BufferedReader(new FileReader("src/DB.json"))) {
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = br.readLine()) != null) {
+            sb.append(line);
+        }
+        JSONObject json = new JSONObject(sb.toString());
+        JSONArray grados = json.getJSONArray("grados");
+        JSONObject grado = grados.getJSONObject(_indexGrado);
+        JSONArray juegos = grado.getJSONArray ("juegos");
+        JSONObject juego = juegos.getJSONObject(_indexGame);
+        String nombreJuego = (String) juego.get("imagen");
         
+        System.out.println(nombreJuego);
+        
+        System.out.println(juegos);
+        
+        return nombreJuego;
+    } catch (FileNotFoundException ex) {
+        Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+        return "Error al leer el JSON"; // Devuelve un JSONArray vacío en caso de error
     }
+}
         
     
     

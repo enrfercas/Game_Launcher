@@ -65,11 +65,11 @@ public class Launcher extends javax.swing.JFrame {
     }
     
     
-    public void CrearNuevoGamePorIndice(int nGrado, int nGame)
+    public void CrearNuevoGamePorIndice(int nGrado, int nGame) throws IOException, JSONException
     {
         Game game = new Game(this,nGrado,nGame);
         game.UpdateInfo(indexGrado, indexGame);
-        MostrarJPanel (game);
+        MostrarJPanel (game);        
         
     }
     
