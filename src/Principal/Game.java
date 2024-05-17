@@ -149,6 +149,7 @@ public class Game extends javax.swing.JPanel {
         CarruselPanel.add(Bolitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 520, 180, 30));
 
         flechaD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha derecha.png"))); // NOI18N
+        flechaD.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         flechaD.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 flechaDMouseClicked(evt);
@@ -157,6 +158,7 @@ public class Game extends javax.swing.JPanel {
         CarruselPanel.add(flechaD, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 220, 30, 60));
 
         flechaIz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Flecha izquierda.png"))); // NOI18N
+        flechaIz.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         flechaIz.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 flechaIzMouseClicked(evt);
