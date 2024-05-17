@@ -27,6 +27,7 @@ public class Game extends javax.swing.JPanel {
     
     ArrayList<String> imagenes = new ArrayList();
     int index = 0;
+    String rutaJuego;
     
     
     
@@ -88,11 +89,15 @@ public class Game extends javax.swing.JPanel {
         JSONArray juegos = grado.getJSONArray ("juegos");
         JSONObject juego = juegos.getJSONObject(_indexGame);
         String nombreJuego = (String) juego.get("imagen");
+        String tituloJuego = (String) juego.get("titulo");
+        String descripcionJuego = (String) juego.get("descripcion");
+        rutaJuego = (String) juego.get("ruta");
         
         System.out.println(nombreJuego);
         
         System.out.println(juegos);
-        
+        TituloDescripcion.setText(tituloJuego);
+        Descripcion.setText(descripcionJuego);        
         return nombreJuego;
     } catch (FileNotFoundException ex) {
         Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
@@ -127,11 +132,11 @@ public class Game extends javax.swing.JPanel {
         imagenCarrusel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        TituloDescripcion = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         DescripcionPanel = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        BtnComenzar = new javax.swing.JLabel();
+        Descripcion = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1440, 880));
         setMinimumSize(new java.awt.Dimension(1440, 880));
@@ -175,11 +180,11 @@ public class Game extends javax.swing.JPanel {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Cuadrado fondo enfocado.png"))); // NOI18N
         CarruselPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 770, 430));
 
-        jLabel9.setFont(new java.awt.Font("Raleway Black", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Embarque y desembarque en helicoptero");
-        jLabel9.setToolTipText("");
-        CarruselPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 410, 40));
+        TituloDescripcion.setFont(new java.awt.Font("Raleway Black", 1, 18)); // NOI18N
+        TituloDescripcion.setForeground(new java.awt.Color(255, 255, 255));
+        TituloDescripcion.setText("Embarque y desembarque en helicoptero");
+        TituloDescripcion.setToolTipText("");
+        CarruselPanel.add(TituloDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 410, 40));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Barrita aislada descripción.png"))); // NOI18N
         CarruselPanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 10, 40));
@@ -190,13 +195,18 @@ public class Game extends javax.swing.JPanel {
         DescripcionPanel.setPreferredSize(new java.awt.Dimension(1440, 300));
         DescripcionPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Comenzar.png"))); // NOI18N
-        DescripcionPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 60, -1, 50));
+        BtnComenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/InterfazGame/Comenzar.png"))); // NOI18N
+        BtnComenzar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnComenzarMouseClicked(evt);
+            }
+        });
+        DescripcionPanel.add(BtnComenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 60, -1, 50));
 
-        jLabel12.setFont(new java.awt.Font("Raleway", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("<html>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno  estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido  usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió </html>");
-        DescripcionPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 120));
+        Descripcion.setFont(new java.awt.Font("Raleway", 0, 14)); // NOI18N
+        Descripcion.setForeground(new java.awt.Color(255, 255, 255));
+        Descripcion.setText("<html>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno  estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido  usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió </html>");
+        DescripcionPanel.add(Descripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 120));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -246,19 +256,27 @@ public class Game extends javax.swing.JPanel {
         
     }//GEN-LAST:event_flechaDMouseClicked
 
+    private void BtnComenzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnComenzarMouseClicked
+        try {
+            Process process = Runtime.getRuntime().exec(rutaJuego);
+        } catch (IOException ex) {
+            Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_BtnComenzarMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Bolitas;
+    private javax.swing.JLabel BtnComenzar;
     private javax.swing.JPanel CarruselPanel;
+    private javax.swing.JLabel Descripcion;
     private javax.swing.JPanel DescripcionPanel;
+    private javax.swing.JLabel TituloDescripcion;
     private javax.swing.JLabel flechaD;
     private javax.swing.JLabel flechaIz;
     private javax.swing.JLabel imagenCarrusel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
